@@ -1,13 +1,11 @@
 #!/bin/bash
-echo "enter the value of num1"
-read num1
-echo "enter the value of num2"
-read num2
+num1=10
+num2=20
 
-sum=`expr $num1 + $num2`
-sub=`expr $num1 - $num2`
-prod=`expr $num1 \* $num2`
-div=`expr $num1 / $num2`
+sum=$(($num1 + $num2))
+sub=$(($num1 - $num2))
+prod=$(($num1 \* $num2))
+div=(($num1 / $num2))
 
 echo "sum of $num1 and $num2 is $sum"
 echo "sub of $num1 and $num2 is $sub"
